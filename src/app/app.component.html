@@ -1,0 +1,10 @@
+<div class ="cointainer">
+  <input type = "value" #input>
+  <button (click)="OnSubmit(input)">submit</button> 
+  <app-hooks [value] = "inputText"*ngIf="destroy">
+      <h1>projected ng-content {{inputText}} </h1>
+  </app-hooks>
+  <br><br>
+  <button (click)="DestroyComponent()" >destroy</button>
+  <p>{{msg | samplePipe}}</p>
+  </div>
